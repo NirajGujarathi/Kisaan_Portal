@@ -1,14 +1,14 @@
 version: "3"
 services:
   react-app:
-    image: devalgote/easyfarming-client:latest
+    image: gtirodkar1234/kisaanportal-client:latest
     stdin_open: true
     ports:
       - "3000:3000"
     networks:
       - mern-app
   api-server:
-    image: devalgote/easyfarming-server:latest
+    image: gtirodkar1234/kisaanportal-server:latest
     ports:
       - "8000:8000"
     networks:

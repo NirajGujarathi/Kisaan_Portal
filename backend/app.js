@@ -22,9 +22,9 @@ const vegetablesRoutes = require("./routes/vegetables")
 
 //database
 mongoose.connect(process.env.DATABASE,{
-    // useNewUrlParser:true,
-    // useCreateIndex:true,
-    //useUnifiedTopology= true
+    useNewUrlParser:true,
+    useCreateIndex:true,
+    useUnifiedTopology= true
 
 }).then(()=>console.log("DB Connected"));
 

@@ -39,7 +39,7 @@ const Home = () => {
 	return (
         <Layout
             title="Welcome freshMart"
-            description="easy Farming"
+            description="KisaanPortal"
             className="container-fluid" >
 
 			{!isAuthenticated() && (

@@ -54,7 +54,7 @@ const Dashboard = () => {
 
 	return (
         <Layout
-            title={`Welcome ${name} !`} description="easy Farming" 
+            title={`Welcome ${name} !`} description="KisaanPortal" 
 			className="container-fluid"
         >
 			
