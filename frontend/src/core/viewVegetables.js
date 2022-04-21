@@ -121,7 +121,7 @@ const View = () => {
 
     return (
         <Layout
-            title="Your vegetables"
+            title="Your Vegetables"
             description=""
             className="container-fluid"
         >
@@ -136,7 +136,7 @@ const View = () => {
                         />
                     </ul>
 
-                    <h4>Filter by price range</h4>
+                    <h4>Filter (Price Range)</h4>
                     <div>
                         <RadioBox
                             prices={prices}
@@ -148,7 +148,7 @@ const View = () => {
                 </div>
 
                 <div className="col-8">
-                    <h2 className="mb-4">Vegetables</h2>
+                    {/* <h2 className="mb-4">Vegetables</h2> */}
                     {click==1 ? showItems() : noItemsMessage()}
                 </div>
             </div>

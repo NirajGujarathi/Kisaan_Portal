@@ -64,7 +64,7 @@ const Profile = ({ match }) => {
     };
 
     const profileUpdate = (name, email, password, location) => (
-        <div className="auth-wrapper">
+        <div className="auth-wrapper update_deets">
             <div className="auth-inner-left">
                 <form>
                     <h3>Update Details</h3>
@@ -141,7 +141,7 @@ const Profile = ({ match }) => {
                         </select>
 
                     </div>
-                    <button onClick={clickSubmit} className="btn btn-secondary btn-lg btn-block">Submit</button>
+                    <button onClick={clickSubmit} className="btn btn-primary btn-lg btn-block">Submit</button>
                 </form>
             </div>
         </div>

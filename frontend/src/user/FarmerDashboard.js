@@ -66,6 +66,7 @@ const FarmerDashboard = () => {
             // const modal_price = record[i].modal_price;
             // // console.log(modal_price);
             const tTr = document.createElement('tr');
+            
             tTr.innerHTML ='<td scope="row">'+state+'</td>'+'\n'+
                 '<td>'+distrcts+'</td>'+'\n'+
                 '<td>'+market+'</td>'+'\n'+
@@ -78,7 +79,7 @@ const FarmerDashboard = () => {
 	const FarmerLinks = () => {
         return (
             <div className="card ml-5">
-                <h4 className="card-header">Farmer Links</h4>
+                <h4 className="card-header">Actions</h4>
                 <ul className="list-group">
                 <li className="list-group-item">
                         <Link className="nav-link" to="/view">
@@ -139,7 +140,7 @@ const FarmerDashboard = () => {
 	const farmerInfo = () => {
         return (
             <div className="card mb-5">
-				<h3 className="card-header">Farmer Information</h3>
+				<h3 className="card-header">Personal Details</h3>
 				<ul className="list-group">
 					<li className="list-group-item"> {name} </li>
 					<li className="list-group-item"> {email} </li>

@@ -107,7 +107,7 @@ const Buy = () => {
             description="Fresh Veggies and Fruits at your Door-Step"
             className="container-fluid"
         >
-            <Search />
+            {/* <Search />  */}
             <div className="row">
                 <div className="col-3">
                     <h4>Filter by farmers</h4>

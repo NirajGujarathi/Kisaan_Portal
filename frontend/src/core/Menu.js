@@ -19,7 +19,7 @@ const Menu = ({ history }) => (
 			<Container>
 				<Navbar.Toggle aria-controls='responseive-navbar-nav' />
 				<Navbar.Collapse id='responsice-navbar-nav'>
-					<Link className="navbar-brand" to={"/"}>KissanPortal</Link>
+					<Link className="navbar-brand" to={"/"}>KisaanPortal</Link>
 					<Nav className="mine">
 						<Nav.Link style={isActive(history, "/")} href="/">Home</Nav.Link>
 

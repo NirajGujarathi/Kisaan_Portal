@@ -38,8 +38,8 @@ const Home = () => {
 
 	return (
         <Layout
-            title="Welcome freshMart"
-            description="KisaanPortal"
+            title="Welcome to Kisaan Portal"
+            description="A one stop solution to find the best veggies straight from the farmers"
             className="container-fluid" >
 
 			{!isAuthenticated() && (
@@ -71,9 +71,6 @@ const Home = () => {
                 </Fragment>    
 
             )}
-            
-            
-
         </Layout>
 	)
 };

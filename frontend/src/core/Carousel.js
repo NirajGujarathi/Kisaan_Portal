@@ -3,7 +3,7 @@ import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDB
 "mdbreact";
 import "./nav.css";
 
-import Image0 from "../core/images/c0.jpg";
+import Image0 from "../core/images/c5.jpg";
 import Image1 from "../core/images/c1.jpg";
 import Image2 from "../core/images/c2.jpg";
 import Image3 from "../core/images/c3.jpg";
@@ -71,7 +71,7 @@ const CarouselPage = () => {
           <MDBMask overlay="black-slight" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">KissanPortal</h3>
+            <h3 className="h3-responsive">KisaanPortal</h3>
             <p>Discover the best veggies</p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
