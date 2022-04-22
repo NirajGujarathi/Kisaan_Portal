@@ -162,7 +162,7 @@ const FarmerDashboard = () => {
                     <h6 className="text-center mt-3">Price in Rupees per Kilogram </h6>
                     <h6 className="text-center mt-3">Updated On : <span id="updatedOn"></span></h6>
                     <div class="text-center">
-                        <button className="btn btn-danger"  onClick={onloadData} onLoad={onloadData}> Fetch Data </button>
+                        <button className="btn btn-danger"  onClick={onloadData}> Fetch Data </button>
                     </div>
                 </div>
             </div>
