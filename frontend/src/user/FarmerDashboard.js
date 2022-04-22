@@ -43,6 +43,10 @@ const FarmerDashboard = () => {
 
 
     const getRecords = (record) => {
+	if(record.length==0){
+            const h = document.getElementById('mandierror');
+            h.innerHTML='Sorry! Market is Closed Today';
+        }
         for(let i=0;i<record.length;i++) {
             // const sr = i+1;
             // console.log(sr);
@@ -196,6 +200,10 @@ const FarmerDashboard = () => {
                         </tr>
                     </tbody>
                 </table>
+		<div>
+                    <h3 id="mandierror">
+                         </h3>
+                </div>
             </div>
         
         </div>
