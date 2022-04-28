@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 import { Link } from "react-router-dom";
@@ -7,28 +7,66 @@ const FarmerDashboard = () => {
         user: { _id, name, email, location, role}
     } = isAuthenticated();
 
+    // window.onload = function() {
+    //     GetInfo();
+    //     onloadData();
+    // };
+    document.addEventListener('readystatechange', event => { 
+        // When HTML/DOM elements are ready:
+        if (document.readyState === "loading") {   //does same as:  ..addEventListener("DOMContentLoaded"..
+            
+        }
+    
+        // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
+        if (document.readyState === "complete") {
+            GetInfo();
+            onloadData();
+        }
+    });
+
     const GetInfo= ()=> {
 
     fetch('https://api.openweathermap.org/data/2.5/forecast?q='+location+'&units=metric&cnt=50&appid=44aef6ede898ea08ff2f4d21eea9762c')
     .then(response => response.json())
     .then(data => {
-        //Getting the min and max values for each day
-        for(var i = 3,j=0; i<43; i+=8,j++){
-            // console.log(Number(data.list[i].main.temp_min - 273.15).toFixed(1)+ "°");
-            document.getElementById("day" + (j+1) + "Min").innerHTML = "Min: " + data.list[i].main.temp_min+ "°";
+        var start_time =0;
+        var end_time = 40;
+
+        // temperature min -max
+       
+        for(var i = start_time,j=0; i<end_time; i+=8,j++){
+            document.getElementById("day" + (j+1) + "_temp_range").innerHTML = "Temp Range: " + data.list[i].main.temp_min+ "°"+ " - "+data.list[i].main.temp_max+"°";
             
         }
     
-        for(var i = 3,j=0; i<43; i+=8,j++){
-            document.getElementById("day" + (j+1) + "Max").innerHTML = "Max: " + data.list[i].main.temp_max+ "°";
-        }
+        // for(var i = 3,j=0; i<43; i+=8,j++){
+        //     document.getElementById("day" + (j+1) + "Max").innerHTML = "Max: " + data.list[i].main.temp_max+ "°";
+        // }
         //------------------------------------------------------------
     
         //Getting Weather Icons
-         for(var i = 3,j=0; i<43; i+=8,j++){
+         for(var i = start_time,j=0; i<end_time; i+=8,j++){
             document.getElementById("img" + (j+1)).src = "http://openweathermap.org/img/wn/"+
             data.list[i].weather[0].icon
             +".png";
+        }
+
+        // wind speed
+        for(var i = start_time,j=0; i<end_time; i+=8,j++){
+            document.getElementById("day" + (j+1) + "_wind").innerHTML = "Wind Speed: " + data.list[i].wind.speed+ "m/s";
+            
+        }
+
+        // humidity %
+        for(var i = start_time,j=0; i<end_time; i+=8,j++){
+            document.getElementById("day" + (j+1) + "_humid").innerHTML = "Humidity: " + data.list[i].main.humidity+ "%";
+            
+        }
+
+        // weather- description
+        for(var i = start_time,j=0; i<end_time; i+=8,j++){
+            document.getElementById("day" + (j+1) + "_desc").innerHTML = "Weather: " + data.list[i].weather[0].description;
+            
         }
 
         for(var i = 0; i<5; i++){
@@ -36,19 +74,10 @@ const FarmerDashboard = () => {
             document.getElementById("day"+(i+1)).innerHTML = weekday[CheckDay(i)];
         }
         //------------------------------------------------------------
-        // console.log(data)
-
-        // temperature min -max
-        // wind speed
-        // humidity %
-        // weATHER- description
-        
-
-    
-    
     })
     
     .catch(err => alert("Something Went Wrong: Try Checking Your Internet Coneciton"))
+
     }
     //Getting and displaying the text for the upcoming five days of the week
     var d = new Date();
@@ -65,66 +94,91 @@ const FarmerDashboard = () => {
         }
     }
 
-    document.addEventListener('readystatechange', event => { 
-        // When HTML/DOM elements are ready:
-        if (event.target.readyState === "interactive") {   //does same as:  ..addEventListener("DOMContentLoaded"..
-        }
-    
-        // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
-        if (event.target.readyState === "complete") {
-            GetInfo();
-            onloadData();
-        }
-    });
+   
 
     const WeatherApi = () =>{
         return (
             
             <div id = "weatherContainer">
-                <div className="text-center">
-                        <button className="btn btn-danger"  onClick={GetInfo}> Get Weather </button>
-            </div>
+                
             <div id="iconsContainer">  
             <div className="row">
 
-                <div className = "col-md-3 icons">
-                    <div className="image"><img src="dots.png" className="imgClass" id="img1"/></div>
-                    <p className="minValues" id="day1Min">Loading...</p>
-                    <p className="maxValues" id="day1Max">Loading...</p>
-                    <p className="weather" id="day1"></p>
-
+                <div className = "col-md-2 offset-md-1 icons">
+                    <div className="mycard">
+                    <div className="row offset-md-4 image">
+                            
+                            <p className="weather" id="day1"></p> 
+                            <img src="dots.png" className="imgClass" id="img1"/>
+                            
+                    </div>
+                    <p className="temperature" id="day1_temp_range">Loading...</p>
+                    <p className="windSpeed" id="day1_wind">Loading...</p>
+                    <p className="humidity" id="day1_humid">Loading...</p>
+                    <p className="weather_desc" id="day1_desc">Loading...</p>
+                    </div>
                 </div>
                 <div className = "col-md-2 icons">
-                    <div className="image"><img src="dots.png" className="imgClass" id="img2"/></div>
-                    <p className="minValues" id="day2Min">Loading...</p>
-                    <p className="maxValues" id="day2Max">Loading...</p>
-                    <p className="weather" id="day2"></p>
-
+                    <div className="mycard">    
+                    <div className="row offset-md-4 image">
+                    
+                            <p className="weather" id="day2"></p> 
+                            <img src="dots.png" className="imgClass" id="img2"/>
+                            
+                    </div>
+                    <p className="temperature" id="day2_temp_range">Loading...</p>
+                    <p className="windSpeed" id="day2_wind">Loading...</p>
+                    <p className="humidity" id="day2_humid">Loading...</p>
+                    <p className="weather_desc" id="day2_desc">Loading...</p>
+                    </div>
                 </div>
                 <div className = "col-md-2 icons">
-                    <div className="image"><img src="dots.png" className="imgClass" id="img3"/></div>
-                    <p className="minValues" id="day3Min">Loading...</p>
-                    <p className="maxValues" id="day3Max">Loading...</p>
-                    <p className="weather" id="day3"></p>
-
+                    <div className="mycard">
+                    <div className="row offset-md-4 image">
+                        
+                            <p className="weather" id="day3"></p> 
+                            <img src="dots.png" className="imgClass" id="img3"/>
+                            
+                    </div>
+                    <p className="temperature" id="day3_temp_range">Loading...</p>
+                    <p className="windSpeed" id="day3_wind">Loading...</p>
+                    <p className="humidity" id="day3_humid">Loading...</p>
+                    <p className="weather_desc" id="day3_desc">Loading...</p>
+                    </div>
                 </div>
                 <div className = "col-md-2 icons">
-                    <div className="image"><img src="dots.png" className="imgClass" id="img4"/></div>
-                    <p className="minValues" id="day4Min">Loading...</p>
-                    <p className="maxValues" id="day4Max">Loading...</p>
-                    <p className="weather" id="day4"></p>
-
+                    <div className="mycard">
+                    <div className="row offset-md-4 image">
+                        
+                            <p className="weather" id="day4"></p> 
+                            <img src="dots.png" className="imgClass" id="img4"/>
+                            
+                    </div>
+                    <p className="temperature" id="day4_temp_range">Loading...</p>
+                    <p className="windSpeed" id="day4_wind">Loading...</p>
+                    <p className="humidity" id="day4_humid">Loading...</p>
+                    <p className="weather_desc" id="day4_desc">Loading...</p>
+                    </div>
                 </div>
-                <div className = "col-md-3 icons">
-                    <div className="image"><img src="dots.png" className="imgClass" id="img5"/></div>
-                    <p className="minValues" id="day5Min">Loading...</p>
-                    <p className="maxValues" id="day5Max">Loading...</p>
-                    <p className="weather" id="day5"></p>
-
+                <div className = "col-md-2 icons">
+                    <div className="mycard">
+                    <div className="row offset-md-4 image">
+                            
+                            <p className="weather" id="day5"></p> 
+                            <img src="dots.png" className="imgClass" id="img5"/>
+                            
+                    </div>
+                    <p className="temperature" id="day5_temp_range">Loading...</p>
+                    <p className="windSpeed" id="day5_wind">Loading...</p>
+                    <p className="humidity" id="day5_humid">Loading...</p>
+                    <p className="weather_desc" id="day5_desc">Loading...</p>
+                    </div>
                 </div>
             </div>  
             </div>
+            <br></br>
         </div>
+        
         );
     };
     
@@ -287,8 +341,13 @@ const FarmerDashboard = () => {
                 <div className="col-xl-12">
                     <h6 className="text-center mt-3">Price in Rupees per Kilogram </h6>
                     <h6 className="text-center mt-3">Updated On : <span id="updatedOn"></span></h6>
-                    <div className="text-center">
-                        <button className="btn btn-danger"  onClick={onloadData}> Fetch Data </button>
+                    <div className="row">
+                        <div className="col-md-4 offset-md-2">
+                            <button className="btn btn-danger"  onClick={onloadData}> Fetch Data </button>
+                        </div>
+                        <div className="col-md-4">
+                            <button className="btn btn-danger"  onClick={GetInfo}> Get Weather </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -343,6 +402,7 @@ const FarmerDashboard = () => {
 			
 			<div className="row">
                 <div className="col-md-12 offset-md-0">{WeatherApi()} </div> 
+
                 <div className="col-md-2 offset-md-0">{FarmerLinks()}</div>
                 <div className="col-md-8 offset-md-0">{GovApi()} </div>
                 <div className="col-md-2 offset-md-0">{farmerInfo()}</div>

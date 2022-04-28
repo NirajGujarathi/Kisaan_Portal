@@ -5,7 +5,8 @@
 
 body {
     background: #F5F5F5 !important;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Georgia', 'Fira Sans', sans-serif; */
   }
 
 
@@ -94,7 +95,7 @@ body {
     color: black;
     margin-left: 0%;
     font-size: 50px;
-    text-shadow: 4px 4px 9px grey;
+    /* text-shadow: 4px 4px 9px grey; */
     text-align: center;
 }
 
@@ -102,7 +103,7 @@ body {
     margin-top: -10px;
     color: black;
     margin-left: 450px;
-    text-shadow: 2px 2px 5px grey;
+    /* text-shadow: 2px 2px 5px grey; */
 }
 .jumbotron {
     height: 10px;
@@ -219,3 +220,22 @@ body {
     }
 }
 
+.mycard{
+    border: black;
+    border-width: 2px;
+    height: 200px;
+    width: 250px;
+    background: #82c2d0;
+    border-radius: 30px;
+}
+.mycard:hover {
+    border-radius: 10%;
+    /* padding: 2px; */
+    border-color: red;
+    border-width: 8px;
+    background:  #ade8f6;
+    /* transform: translateY(10px); */
+    /* z-index: -9; */
+    transform: scale(1.10);
+    /* color: black; */
+}
