@@ -3,17 +3,19 @@ import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDB
 "mdbreact";
 import "./nav.css";
 
-import Image0 from "../core/images/c5.jpg";
-import Image1 from "../core/images/c1.jpg";
-import Image2 from "../core/images/c2.jpg";
-import Image3 from "../core/images/c3.jpg";
+import Image0 from "../core/images/far1.jpg";
+import Image1 from "../core/images/far2.jpg";
+import Image2 from "../core/images/far3.jpg";
+// import Image3 from "../core/images/c3.jpg";
 
 const CarouselPage = () => {
   return (
-    <MDBContainer>
+    <MDBContainer
+    className="carousel_home"
+    >
       <MDBCarousel
       activeItem={1}
-      length={4}
+      length={3}
       showControls={true}
       showIndicators={true}
       className="z-depth-1"
@@ -22,7 +24,7 @@ const CarouselPage = () => {
         <MDBCarouselItem itemId="1" className="carHover">
           <MDBView>
             <img
-              className="d-block w-100"
+              className="d-block"
               src={Image0}
               alt="First slide"
             />
@@ -36,7 +38,7 @@ const CarouselPage = () => {
         <MDBCarouselItem itemId="2" className="carHover">
           <MDBView>
             <img
-              className="d-block w-100"
+              className="d-block"
               src={Image1}
               alt="Second slide"
             />
@@ -50,7 +52,7 @@ const CarouselPage = () => {
         <MDBCarouselItem itemId="3" className="carHover">
           <MDBView>
             <img
-              className="d-block w-100"
+              className="d-block"
               src={Image2}
               alt="Third slide"
             />
@@ -61,10 +63,10 @@ const CarouselPage = () => {
             <p>FOR YOUR HEALTH</p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
-		 <MDBCarouselItem itemId="4" className="carHover">
+		 {/* <MDBCarouselItem itemId="4" className="carHover">
           <MDBView>
             <img
-              className="d-block w-100"
+              className="d-block"
               src={Image3}
               alt="Fourth slide"
             />
@@ -74,7 +76,7 @@ const CarouselPage = () => {
             <h3 className="h3-responsive">KisaanPortal</h3>
             <p>Discover the best veggies</p>
           </MDBCarouselCaption>
-        </MDBCarouselItem>
+        </MDBCarouselItem> */}
       </MDBCarouselInner>
     </MDBCarousel>
     </MDBContainer>

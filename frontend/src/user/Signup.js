@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../core/Layout";
 import { signup } from "../auth";
+import "../styles.css";
 
 const Signup = () => {
     const [values, setValues] = useState({
@@ -43,9 +44,9 @@ const Signup = () => {
 
     const signUpForm = () => (
         <div className="auth-wrapper-up">
-            <div className="auth-inner-up">
+            <div className="auth-inner-up signup_form">
                 <form>
-                    <h3>Sign Up</h3>
+                    <h3 className = "signup">Sign Up</h3>
                     <div className="form-group">
                         <label >Name</label>
                         <input
@@ -132,7 +133,7 @@ const Signup = () => {
                         </select>
 
                     </div>
-                    <button onClick={clickSubmit} className="btn btn-secondary btn-lg btn-block">Submit</button>
+                    <button onClick={clickSubmit} className="btn btn-info btn-lg btn-block">Submit</button>
                 </form>
             </div>
         </div>
@@ -162,7 +163,7 @@ const Signup = () => {
         <Layout
             title=" "
             description=" "
-            className="container col-md-4 offset-md-4" >
+            className="container signup_card" >
             {showSuccess()}
             {showError()}
             {signUpForm()}

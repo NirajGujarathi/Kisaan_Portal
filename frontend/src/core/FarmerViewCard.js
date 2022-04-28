@@ -63,21 +63,22 @@ const FCard = ({ vegetable, showAddToCartButton = true, showRemoveVegetableButto
   //  const remain = vegetable.quantity-vegetable.sold;
     return (
         <div className="col-4 mb-3">
-            <div className="card">
+            <div className="card card_fcard">
                 <div className="card-header">{vegetable.name}</div>
                 <div className="card-body">
                     {shouldRedirect(redirect)}
                     <ShowImage item={vegetable} url="vegetables" />
-                    <p className="black-10"> Rs. {vegetable.price} per kg</p>
+                    <p className=""> Rs. {vegetable.price} per kg</p>
                     
-                    <p className="black-9">
+                    <p className="">
                      Added on {moment(vegetable.createdAt).fromNow()}
                     </p>
-                    <p className="black-8">
+                    <p className="">
                     {vegetable.sold} kgs sold
                     </p>
                     {showStock(vegetable.quantity)}
-                    <p className="black-7">
+                    <hr/>
+                    <p className="">
                     {remain} kgs Left
                     </p>
                     <br />

@@ -258,22 +258,22 @@ const FarmerDashboard = () => {
     };
 	const FarmerLinks = () => {
         return (
-            <div className="card ml-5">
+            <div className="card card_farmer ml-5">
                 <h4 className="card-header">Actions</h4>
                 <ul className="list-group">
                 <li className="list-group-item">
                         <Link className="nav-link" to="/view">
-                            View Vegetables
+                            View
                         </Link>
                     </li>
                     <li className="list-group-item">
                         <Link className="nav-link" to="/add/vegetables">
-                            Add Vegetables
+                            Add
                         </Link>
                     </li>
                     <li className="list-group-item">
                         <Link className="nav-link" to="/remove">
-                            Remove Vegetables
+                            Remove
                         </Link>
                     </li>
 					<li className="list-group-item">
@@ -319,7 +319,7 @@ const FarmerDashboard = () => {
     }
 	const farmerInfo = () => {
         return (
-            <div className="card mb-5">
+            <div className="card card_farmer mb-5">
 				<h3 className="card-header">Personal Details</h3>
 				<ul className="list-group">
 					<li className="list-group-item"> {name} </li>
@@ -339,14 +339,14 @@ const FarmerDashboard = () => {
         <div className="container-fluid p-3 fetch_data">
             <div className="row" >
                 <div className="col-xl-12">
-                    <h6 className="text-center mt-3">Price in Rupees per Kilogram </h6>
-                    <h6 className="text-center mt-3">Updated On : <span id="updatedOn"></span></h6>
+                    <h4 className="text-center mt-3 farmer_text">Price in Rupees per Kilogram </h4>
+                    <h6 className="text-center mt-3 farmer_text">Updated On : <span id="updatedOn"></span></h6>
                     <div className="row">
                         <div className="col-md-4 offset-md-2">
-                            <button className="btn btn-danger"  onClick={onloadData}> Fetch Data </button>
+                            <button className="btn btn_dashboard"  onClick={onloadData}> Fetch Data </button>
                         </div>
                         <div className="col-md-4">
-                            <button className="btn btn-danger"  onClick={GetInfo}> Get Weather </button>
+                            <button className="btn btn_dashboard"  onClick={GetInfo}> Get Weather </button>
                         </div>
                     </div>
                 </div>

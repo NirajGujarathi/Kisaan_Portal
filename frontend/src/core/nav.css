@@ -1,3 +1,8 @@
+.navbar,
+.navbar-default {
+    background-color: #2f4f4f !important; /* override background image gradient w/ flat color */
+}
+
 .mine{
  	margin-left: 750px;
 }
@@ -78,3 +83,22 @@
 		
   }
 
+.carousel_home{
+	padding: 0rem;
+	margin: 0em;
+	position: absolute;
+	left : 16%;
+	top: 43%;
+}
+
+
+.card_fcard{
+    background-color: #2f4f4f;
+	color: white;
+}
+
+.info_dashboard{
+	text-align: center;
+	font-weight: 800;
+	color: rgb(219, 151, 24);
+}

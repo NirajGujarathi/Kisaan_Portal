@@ -7,7 +7,7 @@ import "./nav.css";
 
 const isActive = (history, path) => {
     if (history.location.pathname === path) {
-        return { color: "#ff9900" };
+        return { color: "#7FFF00" };
     } else {
         return { color: "white" };
     }
@@ -19,7 +19,7 @@ const Menu = ({ history }) => (
 			<Container>
 				<Navbar.Toggle aria-controls='responseive-navbar-nav' />
 				<Navbar.Collapse id='responsice-navbar-nav'>
-					<Link className="navbar-brand" to={"/"}>KisaanPortal</Link>
+					<Link className="navbar-brand" to={"/"}>Kisaan Portal</Link>
 					<Nav className="mine">
 						<Nav.Link style={isActive(history, "/")} href="/">Home</Nav.Link>
 

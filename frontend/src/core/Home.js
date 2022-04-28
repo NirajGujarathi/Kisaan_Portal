@@ -4,6 +4,7 @@ import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 import {getVegetables} from './apiCore';
 import Card from './Card'
+import "./nav.css";
 
 const Home = () => {
 
@@ -39,9 +40,10 @@ const Home = () => {
 	return (
         <Layout
             title="Welcome to Kisaan Portal"
-            description="A one stop solution to find the best veggies straight from the farmers"
+            description="A one stop solution to find the best veggies straight from the farmers."
             className="container-fluid" >
-
+            
+            <h3 className = "info_dashboard"> जय जवान ! जय किसान !  </h3>
 			{!isAuthenticated() && (
             <CarouselPage />
             )}
