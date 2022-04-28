@@ -1,14 +1,14 @@
 version: "3"
 services:
   react-app:
-    image: gtirodkar1234/kisaanportal-client:latest
+    image: nirajg/kisaan_portal_client:latest
     stdin_open: true
     ports:
       - "3000:3000"
     networks:
       - mern-app
   api-server:
-    image: gtirodkar1234/kisaanportal-server:latest
+    image: nirajg/kisaan_portal_server:latest
     ports:
       - "8000:8000"
     networks:

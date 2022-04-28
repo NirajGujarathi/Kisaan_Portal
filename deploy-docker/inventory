@@ -1,2 +1,2 @@
 [ubuntu]
-localhost ansible_user=gaurav
+localhost ansible_user=niraj
