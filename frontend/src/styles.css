@@ -2,8 +2,6 @@
  * border radius
  */
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
-<<<<<<< HEAD
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body {
@@ -11,21 +9,6 @@ body {
     background: #E0FFFF;
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Georgia', 'Fira Sans', sans-serif; */
-=======
-
-body {
-    background: #F5F5F5 !important;
-    font-family: 'Fira Sans', sans-serif;
->>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
-=======
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-body {
-    /* background: #F0F8FF !important; */
-    background: #E0FFFF;
-    font-family: 'Roboto', sans-serif;
-    /* font-family: 'Georgia', 'Fira Sans', sans-serif; */
->>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
   }
 
 
@@ -102,14 +85,7 @@ body {
 @media only screen and (max-width: 600px) {
     .jumbotron h2 {
         margin-top: 10px;
-<<<<<<< HEAD
-<<<<<<< HEAD
         font-family: 'Lobster', cursive;
-=======
->>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
-=======
-        font-family: 'Lobster', cursive;
->>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
     }
 }
 
@@ -122,49 +98,22 @@ body {
     color: black;
     margin-left: 0%;
     font-size: 50px;
-<<<<<<< HEAD
-<<<<<<< HEAD
     /* text-shadow: 4px 4px 9px grey; */
     text-align: center;
     font-family: 'Lobster', cursive;
-=======
-    text-shadow: 4px 4px 9px grey;
-    text-align: center;
->>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
-=======
-    /* text-shadow: 4px 4px 9px grey; */
-    text-align: center;
-    font-family: 'Lobster', cursive;
->>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
 }
 
 .jumbotron p {
     margin-top: -10px;
     color: black;
     margin-left: 450px;
-<<<<<<< HEAD
-<<<<<<< HEAD
     /* text-shadow: 2px 2px 5px grey; */
-=======
-    text-shadow: 2px 2px 5px grey;
->>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
-=======
-    /* text-shadow: 2px 2px 5px grey; */
->>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
 }
 .jumbotron {
     height: 10px;
     color: #fff;
 	margin-top:50px;
-<<<<<<< HEAD
-<<<<<<< HEAD
     background-color:  #E0FFFF;
-=======
-    background-color:  #F5F5F5;
->>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
-=======
-    background-color:  #E0FFFF;
->>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
 }
 
 /**
@@ -274,10 +223,6 @@ body {
         background-position: 0% 50%;
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
 
 #market_price_body{
     background-color: rgb(198, 223, 238);
@@ -347,8 +292,3 @@ hr{
     color: white;
     background-color: white;
 }
-<<<<<<< HEAD
-=======
->>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
-=======
->>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
