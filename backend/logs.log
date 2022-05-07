@@ -704,6 +704,10 @@
 2022-04-22 01:57:17, info, Filters applied and vegetables found
 2022-04-22 02:01:35, info, Vegetables found
 2022-04-22 02:01:35, info, Vegetables found
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
 2022-04-27 15:46:42, info, Vegetables found
 2022-04-27 15:46:42, info, Vegetables found
 2022-04-27 15:47:05, info, Vegetables found
@@ -1117,3 +1121,13 @@
 2022-04-28 17:40:19, info, Vegetables found
 2022-04-28 17:41:22, info, Vegetables found
 2022-04-28 17:41:22, info, Vegetables found
+<<<<<<< HEAD
+2022-05-07 20:08:06, info, got Farmer list 
+2022-05-07 20:13:43, info, got Farmer list 
+2022-05-07 20:14:01, info, got Farmer list 
+2022-05-07 20:18:18, info, got Farmer list 
+2022-05-07 20:20:28, info, got Farmer list 
+=======
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
