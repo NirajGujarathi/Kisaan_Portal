@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
+=======
+import React from "react";
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
 import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 import { Link } from "react-router-dom";
@@ -7,6 +11,7 @@ const FarmerDashboard = () => {
         user: { _id, name, email, location, role}
     } = isAuthenticated();
 
+<<<<<<< HEAD
     // window.onload = function() {
     //     GetInfo();
     //     onloadData();
@@ -183,6 +188,8 @@ const FarmerDashboard = () => {
     };
     
 
+=======
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
     const onloadData= () => {
         var url = "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=579b464db66ec23bdd000001a91006a69a344a2f5750f6bda75532d8&format=json&offset=0&limit=1000&filters[state]="+location;
 
@@ -258,22 +265,38 @@ const FarmerDashboard = () => {
     };
 	const FarmerLinks = () => {
         return (
+<<<<<<< HEAD
             <div className="card card_farmer ml-5">
+=======
+            <div className="card ml-5">
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
                 <h4 className="card-header">Actions</h4>
                 <ul className="list-group">
                 <li className="list-group-item">
                         <Link className="nav-link" to="/view">
+<<<<<<< HEAD
                             View
+=======
+                            View Vegetables
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
                         </Link>
                     </li>
                     <li className="list-group-item">
                         <Link className="nav-link" to="/add/vegetables">
+<<<<<<< HEAD
                             Add
+=======
+                            Add Vegetables
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
                         </Link>
                     </li>
                     <li className="list-group-item">
                         <Link className="nav-link" to="/remove">
+<<<<<<< HEAD
                             Remove
+=======
+                            Remove Vegetables
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
                         </Link>
                     </li>
 					<li className="list-group-item">
@@ -319,7 +342,11 @@ const FarmerDashboard = () => {
     }
 	const farmerInfo = () => {
         return (
+<<<<<<< HEAD
             <div className="card card_farmer mb-5">
+=======
+            <div className="card mb-5">
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
 				<h3 className="card-header">Personal Details</h3>
 				<ul className="list-group">
 					<li className="list-group-item"> {name} </li>
@@ -339,6 +366,7 @@ const FarmerDashboard = () => {
         <div className="container-fluid p-3 fetch_data">
             <div className="row" >
                 <div className="col-xl-12">
+<<<<<<< HEAD
                     <h4 className="text-center mt-3 farmer_text">Price in Rupees per Kilogram </h4>
                     <h6 className="text-center mt-3 farmer_text">Updated On : <span id="updatedOn"></span></h6>
                     <div className="row">
@@ -348,6 +376,12 @@ const FarmerDashboard = () => {
                         <div className="col-md-4">
                             <button className="btn btn_dashboard"  onClick={GetInfo}> Get Weather </button>
                         </div>
+=======
+                    <h6 className="text-center mt-3">Price in Rupees per Kilogram </h6>
+                    <h6 className="text-center mt-3">Updated On : <span id="updatedOn"></span></h6>
+                    <div class="text-center">
+                        <button className="btn btn-danger"  onClick={onloadData}> Fetch Data </button>
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
                     </div>
                 </div>
             </div>
@@ -401,8 +435,11 @@ const FarmerDashboard = () => {
         >
 			
 			<div className="row">
+<<<<<<< HEAD
                 <div className="col-md-12 offset-md-0">{WeatherApi()} </div> 
 
+=======
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
                 <div className="col-md-2 offset-md-0">{FarmerLinks()}</div>
                 <div className="col-md-8 offset-md-0">{GovApi()} </div>
                 <div className="col-md-2 offset-md-0">{farmerInfo()}</div>

@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 .navbar,
 .navbar-default {
     background-color: #2f4f4f !important; /* override background image gradient w/ flat color */
 }
 
+=======
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
 .mine{
  	margin-left: 750px;
 }
@@ -83,6 +86,7 @@
 		
   }
 
+<<<<<<< HEAD
 .carousel_home{
 	padding: 0rem;
 	margin: 0em;
@@ -102,3 +106,5 @@
 	font-weight: 800;
 	color: rgb(219, 151, 24);
 }
+=======
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751

@@ -2,6 +2,7 @@
  * border radius
  */
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body {
@@ -9,6 +10,12 @@ body {
     background: #E0FFFF;
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Georgia', 'Fira Sans', sans-serif; */
+=======
+
+body {
+    background: #F5F5F5 !important;
+    font-family: 'Fira Sans', sans-serif;
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
   }
 
 
@@ -85,7 +92,10 @@ body {
 @media only screen and (max-width: 600px) {
     .jumbotron h2 {
         margin-top: 10px;
+<<<<<<< HEAD
         font-family: 'Lobster', cursive;
+=======
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
     }
 }
 
@@ -98,22 +108,35 @@ body {
     color: black;
     margin-left: 0%;
     font-size: 50px;
+<<<<<<< HEAD
     /* text-shadow: 4px 4px 9px grey; */
     text-align: center;
     font-family: 'Lobster', cursive;
+=======
+    text-shadow: 4px 4px 9px grey;
+    text-align: center;
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
 }
 
 .jumbotron p {
     margin-top: -10px;
     color: black;
     margin-left: 450px;
+<<<<<<< HEAD
     /* text-shadow: 2px 2px 5px grey; */
+=======
+    text-shadow: 2px 2px 5px grey;
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
 }
 .jumbotron {
     height: 10px;
     color: #fff;
 	margin-top:50px;
+<<<<<<< HEAD
     background-color:  #E0FFFF;
+=======
+    background-color:  #F5F5F5;
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
 }
 
 /**
@@ -223,6 +246,7 @@ body {
         background-position: 0% 50%;
     }
 }
+<<<<<<< HEAD
 
 #market_price_body{
     background-color: rgb(198, 223, 238);
@@ -292,3 +316,5 @@ hr{
     color: white;
     background-color: white;
 }
+=======
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751

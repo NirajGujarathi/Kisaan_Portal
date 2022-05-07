@@ -26,4 +26,8 @@ networks:
     driver: bridge
 volumes:
   mongo-data:
+<<<<<<< HEAD
     driver: local
+=======
+    driver: local
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751

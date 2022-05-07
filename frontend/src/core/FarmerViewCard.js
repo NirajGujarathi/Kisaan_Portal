@@ -63,11 +63,16 @@ const FCard = ({ vegetable, showAddToCartButton = true, showRemoveVegetableButto
   //  const remain = vegetable.quantity-vegetable.sold;
     return (
         <div className="col-4 mb-3">
+<<<<<<< HEAD
             <div className="card card_fcard">
+=======
+            <div className="card">
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
                 <div className="card-header">{vegetable.name}</div>
                 <div className="card-body">
                     {shouldRedirect(redirect)}
                     <ShowImage item={vegetable} url="vegetables" />
+<<<<<<< HEAD
                     <p className=""> Rs. {vegetable.price} per kg</p>
                     
                     <p className="">
@@ -79,6 +84,18 @@ const FCard = ({ vegetable, showAddToCartButton = true, showRemoveVegetableButto
                     {showStock(vegetable.quantity)}
                     <hr/>
                     <p className="">
+=======
+                    <p className="black-10"> Rs. {vegetable.price} per kg</p>
+                    
+                    <p className="black-9">
+                     Added on {moment(vegetable.createdAt).fromNow()}
+                    </p>
+                    <p className="black-8">
+                    {vegetable.sold} kgs sold
+                    </p>
+                    {showStock(vegetable.quantity)}
+                    <p className="black-7">
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
                     {remain} kgs Left
                     </p>
                     <br />

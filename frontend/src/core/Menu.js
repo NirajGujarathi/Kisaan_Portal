@@ -7,7 +7,11 @@ import "./nav.css";
 
 const isActive = (history, path) => {
     if (history.location.pathname === path) {
+<<<<<<< HEAD
         return { color: "#7FFF00" };
+=======
+        return { color: "#ff9900" };
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
     } else {
         return { color: "white" };
     }
@@ -19,7 +23,11 @@ const Menu = ({ history }) => (
 			<Container>
 				<Navbar.Toggle aria-controls='responseive-navbar-nav' />
 				<Navbar.Collapse id='responsice-navbar-nav'>
+<<<<<<< HEAD
 					<Link className="navbar-brand" to={"/"}>Kisaan Portal</Link>
+=======
+					<Link className="navbar-brand" to={"/"}>KisaanPortal</Link>
+>>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
 					<Nav className="mine">
 						<Nav.Link style={isActive(history, "/")} href="/">Home</Nav.Link>
 
