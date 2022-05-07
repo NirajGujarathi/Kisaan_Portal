@@ -5,9 +5,13 @@ import { isAuthenticated } from "../auth";
 import {getVegetables} from './apiCore';
 import Card from './Card'
 <<<<<<< HEAD
+<<<<<<< HEAD
 import "./nav.css";
 =======
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+import "./nav.css";
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
 
 const Home = () => {
 
@@ -44,6 +48,7 @@ const Home = () => {
         <Layout
             title="Welcome to Kisaan Portal"
 <<<<<<< HEAD
+<<<<<<< HEAD
             description="A one stop solution to find the best veggies straight from the farmers."
             className="container-fluid" >
             
@@ -53,6 +58,12 @@ const Home = () => {
             className="container-fluid" >
 
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+            description="A one stop solution to find the best veggies straight from the farmers."
+            className="container-fluid" >
+            
+            <h3 className = "info_dashboard"> जय जवान ! जय किसान !  </h3>
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
 			{!isAuthenticated() && (
             <CarouselPage />
             )}

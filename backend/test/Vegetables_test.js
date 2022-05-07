@@ -23,7 +23,6 @@ describe("Vegetables API Testing", function(){
 
     })
 
-   
     describe("Testing Existing - Vegetable Details", function(){      
         it("Return Status Code - 200 Default Farmer Exists", function(done){
             var url = "https://kisaan-portal.herokuapp.com/api/vegetables/6261a71b45c5fc794964dc53";

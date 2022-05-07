@@ -3,10 +3,15 @@ import { Redirect } from "react-router-dom";
 import Layout from "../core/Layout";
 import { signin, authenticate, isAuthenticated } from "../auth";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import "../styles.css";
 
 =======
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+import "../styles.css";
+
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
 
 const Signin = () => {
     const [values, setValues] = useState({
@@ -44,6 +49,7 @@ const Signin = () => {
     const signInForm = () => (
         <div className="auth-wrapper">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <div className="auth-inner signin_form">
                 <form>
                     <h3 className = "signin">Sign In</h3>
@@ -52,6 +58,11 @@ const Signin = () => {
                 <form>
                     <h3>Sign In</h3>
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+            <div className="auth-inner signin_form">
+                <form>
+                    <h3 className = "signin">Sign In</h3>
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
                     <div className="form-group">
                         <label >Email address</label>
                         <input
@@ -74,10 +85,14 @@ const Signin = () => {
                         />
                     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <button onClick={clickSubmit} className="btn btn-info btn-lg btn-block">
 =======
                     <button onClick={clickSubmit} className="btn btn-secondary btn-lg btn-block">
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+                    <button onClick={clickSubmit} className="btn btn-info btn-lg btn-block">
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
                         Submit
                     </button>
                 </form>

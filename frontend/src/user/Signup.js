@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 import Layout from "../core/Layout";
 import { signup } from "../auth";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import "../styles.css";
 =======
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+import "../styles.css";
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
 
 const Signup = () => {
     const [values, setValues] = useState({
@@ -48,6 +52,7 @@ const Signup = () => {
     const signUpForm = () => (
         <div className="auth-wrapper-up">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <div className="auth-inner-up signup_form">
                 <form>
                     <h3 className = "signup">Sign Up</h3>
@@ -56,6 +61,11 @@ const Signup = () => {
                 <form>
                     <h3>Sign Up</h3>
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+            <div className="auth-inner-up signup_form">
+                <form>
+                    <h3 className = "signup">Sign Up</h3>
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
                     <div className="form-group">
                         <label >Name</label>
                         <input
@@ -143,10 +153,14 @@ const Signup = () => {
 
                     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <button onClick={clickSubmit} className="btn btn-info btn-lg btn-block">Submit</button>
 =======
                     <button onClick={clickSubmit} className="btn btn-secondary btn-lg btn-block">Submit</button>
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+                    <button onClick={clickSubmit} className="btn btn-info btn-lg btn-block">Submit</button>
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
                 </form>
             </div>
         </div>
@@ -177,10 +191,14 @@ const Signup = () => {
             title=" "
             description=" "
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="container signup_card" >
 =======
             className="container col-md-4 offset-md-4" >
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+            className="container signup_card" >
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
             {showSuccess()}
             {showError()}
             {signUpForm()}

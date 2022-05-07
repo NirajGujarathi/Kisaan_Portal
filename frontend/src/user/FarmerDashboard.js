@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useState } from "react";
 =======
 import React from "react";
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+import React, { useState } from "react";
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
 import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 import { Link } from "react-router-dom";
@@ -12,6 +16,9 @@ const FarmerDashboard = () => {
     } = isAuthenticated();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
     // window.onload = function() {
     //     GetInfo();
     //     onloadData();
@@ -188,8 +195,11 @@ const FarmerDashboard = () => {
     };
     
 
+<<<<<<< HEAD
 =======
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
     const onloadData= () => {
         var url = "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=579b464db66ec23bdd000001a91006a69a344a2f5750f6bda75532d8&format=json&offset=0&limit=1000&filters[state]="+location;
 
@@ -266,37 +276,53 @@ const FarmerDashboard = () => {
 	const FarmerLinks = () => {
         return (
 <<<<<<< HEAD
+<<<<<<< HEAD
             <div className="card card_farmer ml-5">
 =======
             <div className="card ml-5">
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+            <div className="card card_farmer ml-5">
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
                 <h4 className="card-header">Actions</h4>
                 <ul className="list-group">
                 <li className="list-group-item">
                         <Link className="nav-link" to="/view">
 <<<<<<< HEAD
+<<<<<<< HEAD
                             View
 =======
                             View Vegetables
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+                            View
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
                         </Link>
                     </li>
                     <li className="list-group-item">
                         <Link className="nav-link" to="/add/vegetables">
 <<<<<<< HEAD
+<<<<<<< HEAD
                             Add
 =======
                             Add Vegetables
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+                            Add
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
                         </Link>
                     </li>
                     <li className="list-group-item">
                         <Link className="nav-link" to="/remove">
 <<<<<<< HEAD
+<<<<<<< HEAD
                             Remove
 =======
                             Remove Vegetables
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+                            Remove
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
                         </Link>
                     </li>
 					<li className="list-group-item">
@@ -343,10 +369,14 @@ const FarmerDashboard = () => {
 	const farmerInfo = () => {
         return (
 <<<<<<< HEAD
+<<<<<<< HEAD
             <div className="card card_farmer mb-5">
 =======
             <div className="card mb-5">
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+            <div className="card card_farmer mb-5">
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
 				<h3 className="card-header">Personal Details</h3>
 				<ul className="list-group">
 					<li className="list-group-item"> {name} </li>
@@ -367,6 +397,9 @@ const FarmerDashboard = () => {
             <div className="row" >
                 <div className="col-xl-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
                     <h4 className="text-center mt-3 farmer_text">Price in Rupees per Kilogram </h4>
                     <h6 className="text-center mt-3 farmer_text">Updated On : <span id="updatedOn"></span></h6>
                     <div className="row">
@@ -376,12 +409,15 @@ const FarmerDashboard = () => {
                         <div className="col-md-4">
                             <button className="btn btn_dashboard"  onClick={GetInfo}> Get Weather </button>
                         </div>
+<<<<<<< HEAD
 =======
                     <h6 className="text-center mt-3">Price in Rupees per Kilogram </h6>
                     <h6 className="text-center mt-3">Updated On : <span id="updatedOn"></span></h6>
                     <div class="text-center">
                         <button className="btn btn-danger"  onClick={onloadData}> Fetch Data </button>
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
                     </div>
                 </div>
             </div>
@@ -436,10 +472,15 @@ const FarmerDashboard = () => {
 			
 			<div className="row">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div className="col-md-12 offset-md-0">{WeatherApi()} </div> 
 
 =======
 >>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
+=======
+                <div className="col-md-12 offset-md-0">{WeatherApi()} </div> 
+
+>>>>>>> 21371581842bb00eae0879914c8479c5482b61f0
                 <div className="col-md-2 offset-md-0">{FarmerLinks()}</div>
                 <div className="col-md-8 offset-md-0">{GovApi()} </div>
                 <div className="col-md-2 offset-md-0">{farmerInfo()}</div>

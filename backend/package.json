@@ -20,27 +20,17 @@
     "formidable": "^1.2.2",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
-<<<<<<< HEAD
     "mocha": "^10.0.0",
     "mongoose": "^6.2.10",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.7",
     "request": "^2.88.2",
-=======
-    "mongoose": "^6.2.10",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.7",
->>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
     "uuid": "^8.3.2",
     "uuidv1": "^1.6.14",
     "winston": "^3.3.3"
   },
-<<<<<<< HEAD
   "description": "",
   "devDependencies": {
     "chai": "^4.3.6"
   }
-=======
-  "description": ""
->>>>>>> fc0d1bccfae5e9e8bd0067f51041b7a35c5e0751
 }
