@@ -35,7 +35,7 @@ const FarmerDashboard = () => {
         // temperature min -max
        
         for(var i = start_time,j=0; i<end_time; i+=8,j++){
-            document.getElementById("day" + (j+1) + "_temp_range").innerHTML = "Temp Range: " + data.list[i].main.temp_min+ "°"+ " - "+data.list[i].main.temp_max+"°";
+            document.getElementById("day" + (j+1) + "_temp_range").innerHTML = "Temp Range -> " + data.list[i].main.temp_min+ "°"+ " - "+data.list[i].main.temp_max+"°";
             
         }
     
@@ -53,19 +53,19 @@ const FarmerDashboard = () => {
 
         // wind speed
         for(var i = start_time,j=0; i<end_time; i+=8,j++){
-            document.getElementById("day" + (j+1) + "_wind").innerHTML = "Wind Speed: " + data.list[i].wind.speed+ "m/s";
+            document.getElementById("day" + (j+1) + "_wind").innerHTML = "Wind Speed -> " + data.list[i].wind.speed+ "m/s";
             
         }
 
         // humidity %
         for(var i = start_time,j=0; i<end_time; i+=8,j++){
-            document.getElementById("day" + (j+1) + "_humid").innerHTML = "Humidity: " + data.list[i].main.humidity+ "%";
+            document.getElementById("day" + (j+1) + "_humid").innerHTML = "Humidity -> " + data.list[i].main.humidity+ "%";
             
         }
 
         // weather- description
         for(var i = start_time,j=0; i<end_time; i+=8,j++){
-            document.getElementById("day" + (j+1) + "_desc").innerHTML = "Weather: " + data.list[i].weather[0].description;
+            document.getElementById("day" + (j+1) + "_desc").innerHTML = "Weather -> " + data.list[i].weather[0].description;
             
         }
 
@@ -108,70 +108,70 @@ const FarmerDashboard = () => {
                     <div className="mycard">
                     <div className="row offset-md-4 image">
                     <img src="dots.png" className="imgClass" id="img1"/> 
-                    <p className="weather" id="day1"></p> 
                     </div>
                     <div class="weather_info">
-                        <p className="temperature" id="day1_temp_range">Loading...</p>
-                        <p className="windSpeed" id="day1_wind">Loading...</p>
-                        <p className="humidity" id="day1_humid">Loading...</p>
-                        <p className="weather_desc" id="day1_desc">Loading...</p>
+                        <div className="weather" id="day1"></div> 
+                        <div className="temperature weather_deets" id="day1_temp_range">Loading...</div>
+                        <div className="windSpeed weather_deets" id="day1_wind">Loading...</div>
+                        <div className="humidity weather_deets" id="day1_humid">Loading...</div>
+                        <div className="weather_desc weather_deets" id="day1_desc">Loading...</div>
                     </div>
                     </div>
                 </div>
                 <div className = "col-md-2 icons">
                     <div className="mycard">    
-                    <div className="row offset-md-4 image">
-                    
-                            <p className="weather" id="day2"></p> 
-                            <img src="dots.png" className="imgClass" id="img2"/>
-                            
-                    </div>
-                    <p className="temperature" id="day2_temp_range">Loading...</p>
-                    <p className="windSpeed" id="day2_wind">Loading...</p>
-                    <p className="humidity" id="day2_humid">Loading...</p>
-                    <p className="weather_desc" id="day2_desc">Loading...</p>
-                    </div>
-                </div>
-                <div className = "col-md-2 icons">
-                    <div className="mycard">
-                    <div className="row offset-md-4 image">
-                        
-                            <p className="weather" id="day3"></p> 
-                            <img src="dots.png" className="imgClass" id="img3"/>
-                            
-                    </div>
-                    <p className="temperature" id="day3_temp_range">Loading...</p>
-                    <p className="windSpeed" id="day3_wind">Loading...</p>
-                    <p className="humidity" id="day3_humid">Loading...</p>
-                    <p className="weather_desc" id="day3_desc">Loading...</p>
+                        <div className="row offset-md-4 image">
+                        <img src="dots.png" className="imgClass" id="img2"/> 
+                        </div>
+                        <div class="weather_info">
+                            <div className="weather" id="day2"></div> 
+                            <div className="temperature weather_deets" id="day2_temp_range">Loading...</div>
+                            <div className="windSpeed weather_deets" id="day2_wind">Loading...</div>
+                            <div className="humidity weather_deets" id="day2_humid">Loading...</div>
+                            <div className="weather_desc weather_deets" id="day2_desc">Loading...</div>
+                        </div>
                     </div>
                 </div>
                 <div className = "col-md-2 icons">
                     <div className="mycard">
-                    <div className="row offset-md-4 image">
-                        
-                            <p className="weather" id="day4"></p> 
-                            <img src="dots.png" className="imgClass" id="img4"/>
-                            
-                    </div>
-                    <p className="temperature" id="day4_temp_range">Loading...</p>
-                    <p className="windSpeed" id="day4_wind">Loading...</p>
-                    <p className="humidity" id="day4_humid">Loading...</p>
-                    <p className="weather_desc" id="day4_desc">Loading...</p>
+                        <div className="row offset-md-4 image">
+                        <img src="dots.png" className="imgClass" id="img3"/> 
+                        </div>
+                        <div class="weather_info">
+                            <div className="weather" id="day3"></div> 
+                            <div className="temperature weather_deets" id="day3_temp_range">Loading...</div>
+                            <div className="windSpeed weather_deets" id="day3_wind">Loading...</div>
+                            <div className="humidity weather_deets" id="day3_humid">Loading...</div>
+                            <div className="weather_desc weather_deets" id="day3_desc">Loading...</div>
+                        </div>
                     </div>
                 </div>
                 <div className = "col-md-2 icons">
                     <div className="mycard">
-                    <div className="row offset-md-4 image">
-                            
-                            <p className="weather" id="day5"></p> 
-                            <img src="dots.png" className="imgClass" id="img5"/>
-                            
+                        <div className="row offset-md-4 image">
+                        <img src="dots.png" className="imgClass" id="img4"/> 
+                        </div>
+                        <div class="weather_info">
+                            <div className="weather" id="day4"></div> 
+                            <div className="temperature weather_deets" id="day4_temp_range">Loading...</div>
+                            <div className="windSpeed weather_deets" id="day4_wind">Loading...</div>
+                            <div className="humidity weather_deets" id="day4_humid">Loading...</div>
+                            <div className="weather_desc weather_deets" id="day4_desc">Loading...</div>
+                        </div>
                     </div>
-                    <p className="temperature" id="day5_temp_range">Loading...</p>
-                    <p className="windSpeed" id="day5_wind">Loading...</p>
-                    <p className="humidity" id="day5_humid">Loading...</p>
-                    <p className="weather_desc" id="day5_desc">Loading...</p>
+                </div>
+                <div className = "col-md-2 icons">
+                    <div className="mycard">
+                        <div className="row offset-md-4 image">
+                        <img src="dots.png" className="imgClass" id="img5"/> 
+                        </div>
+                        <div class="weather_info">
+                            <div className="weather" id="day5"></div> 
+                            <div className="temperature weather_deets" id="day5_temp_range">Loading...</div>
+                            <div className="windSpeed weather_deets" id="day5_wind">Loading...</div>
+                            <div className="humidity weather_deets" id="day5_humid">Loading...</div>
+                            <div className="weather_desc weather_deets" id="day5_desc">Loading...</div>
+                        </div>
                     </div>
                 </div>
             </div>  
