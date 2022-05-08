@@ -10,7 +10,7 @@ const Dashboard = () => {
 
 	const userLinks = () => {
         return (
-            <div className="card ml-5">
+            <div className="card ml-5 card_farmer">
                 <h4 className="card-header">User Links</h4>
                 <ul className="list-group">
                     <li className="list-group-item">
@@ -35,7 +35,7 @@ const Dashboard = () => {
 
 	const userInfo = () => {
         return (
-            <div className="card mb-5">
+            <div className="card mb-5 card_farmer">
 				<h3 className="card-header">User Information</h3>
 				<ul className="list-group">
 					<li className="list-group-item"> {name} </li>
@@ -170,7 +170,7 @@ const Dashboard = () => {
                     <h6 className="text-center mt-3">Price in Rupees per Kilogram </h6>
                     <h6 className="text-center mt-3">Updated On : <span id="updatedOn"></span></h6>
                     <div class="text-center">
-                        <button className="btn btn-danger"  onClick={onloadData}> Fetch Data </button>
+                        <button className="btn btn_dashboard"  onClick={onloadData}> Fetch Data </button>
                     </div>
                 </div>
             </div>
