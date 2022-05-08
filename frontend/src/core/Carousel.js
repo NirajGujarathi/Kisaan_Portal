@@ -3,8 +3,8 @@ import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDB
 "mdbreact";
 import "./nav.css";
 
-import Image0 from "../core/images/far1.jpg";
-import Image1 from "../core/images/far2.jpg";
+import Image0 from "../core/images/far2.jpg";
+import Image1 from "../core/images/far1.jpg";
 import Image2 from "../core/images/far3.jpg";
 // import Image3 from "../core/images/c3.jpg";
 
@@ -31,8 +31,8 @@ const CarouselPage = () => {
           <MDBMask overlay="black-light" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Fresh Veggies</h3>
-            <p>Order now</p>
+            <h3 className="h3-responsive">Directly from the Farm</h3>
+            <p>Place your order now!</p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="2" className="carHover">
@@ -45,8 +45,8 @@ const CarouselPage = () => {
           <MDBMask overlay="black-strong" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Good Vegetables</h3>
-            <p>FOR YOUR DELIVERY</p>
+            <h3 className="h3-responsive">Hand Plucked Just For You!</h3>
+            <p>Only the best for you</p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="3" className="carHover">
@@ -59,7 +59,7 @@ const CarouselPage = () => {
           <MDBMask overlay="black-slight" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Organic Farming</h3>
+            <h3 className="h3-responsive">No Harmful Pesticides Used</h3>
             <p>FOR YOUR HEALTH</p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
