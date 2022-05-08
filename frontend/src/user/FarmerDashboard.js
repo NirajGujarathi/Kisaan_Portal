@@ -107,15 +107,15 @@ const FarmerDashboard = () => {
                 <div className = "col-md-2 offset-md-1 icons">
                     <div className="mycard">
                     <div className="row offset-md-4 image">
-                            
-                            <p className="weather" id="day1"></p> 
-                            <img src="dots.png" className="imgClass" id="img1"/>
-                            
+                    <img src="dots.png" className="imgClass" id="img1"/> 
+                    <p className="weather" id="day1"></p> 
                     </div>
-                    <p className="temperature" id="day1_temp_range">Loading...</p>
-                    <p className="windSpeed" id="day1_wind">Loading...</p>
-                    <p className="humidity" id="day1_humid">Loading...</p>
-                    <p className="weather_desc" id="day1_desc">Loading...</p>
+                    <div class="weather_info">
+                        <p className="temperature" id="day1_temp_range">Loading...</p>
+                        <p className="windSpeed" id="day1_wind">Loading...</p>
+                        <p className="humidity" id="day1_humid">Loading...</p>
+                        <p className="weather_desc" id="day1_desc">Loading...</p>
+                    </div>
                     </div>
                 </div>
                 <div className = "col-md-2 icons">
