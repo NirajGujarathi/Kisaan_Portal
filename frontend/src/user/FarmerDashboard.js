@@ -263,17 +263,17 @@ const FarmerDashboard = () => {
                 <ul className="list-group">
                 <li className="list-group-item">
                         <Link className="nav-link" to="/view">
-                            View
+                            View Vegetable
                         </Link>
                     </li>
                     <li className="list-group-item">
                         <Link className="nav-link" to="/add/vegetables">
-                            Add
+                            Add Vegetable
                         </Link>
                     </li>
                     <li className="list-group-item">
                         <Link className="nav-link" to="/remove">
-                            Remove
+                            Remove Vegetable
                         </Link>
                     </li>
 					<li className="list-group-item">
