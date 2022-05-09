@@ -8,9 +8,10 @@ pipeline{
     stages{
         stage('Stage 1: Git Clone'){
             steps{
-                git branch: 'niraj-working', url: 'https://github.com/NirajGujarathi/Kisaan_Portal.git'
+                git branch: 'master', url: 'https://github.com/NirajGujarathi/Kisaan_Portal.git'
             }
         }
+        
         stage('Stage 2: Build Docker Server'){
             steps{
                 dir("backend"){
@@ -29,6 +30,15 @@ pipeline{
                 }
             }
         }
+        stage('Stage : npm testing'){
+            steps{
+                dir("backend"){
+                    sh 'npm i'
+                    sh 'npm run test'
+                }
+            }
+        }
+        
         
         stage('Stage 4: Push Server Docker Image to DockerHub') {
             steps {
