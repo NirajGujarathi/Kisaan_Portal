@@ -7,14 +7,7 @@ const FarmerDashboard = () => {
         user: { _id, name, email, location, role}
     } = isAuthenticated();
 
-	const [dimensions, setDimensions] = useState(pageDimensions)
-
-	useEffect(() => {
-	    	GetInfo();
-        	onloadData();
-	}, [dimensions])
 	
-     
     document.addEventListener('readystatechange', event => { 
         // When HTML/DOM elements are ready:
         if (document.readyState === "loading") {   //does same as:  ..addEventListener("DOMContentLoaded"..
