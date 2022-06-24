@@ -7,7 +7,6 @@ const FarmerDashboard = () => {
         user: { _id, name, email, location, role}
     } = isAuthenticated();
 
-	window.location.reload(false);
     document.addEventListener('readystatechange', event => { 
         // When HTML/DOM elements are ready:
         if (document.readyState === "loading") {   //does same as:  ..addEventListener("DOMContentLoaded"..
