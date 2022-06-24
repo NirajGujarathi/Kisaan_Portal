@@ -91,7 +91,11 @@ const Signin = () => {
     const redirectUser = () => {
         if (redirectToReferrer) {
             if(user && user.role ===1){
-                return <Redirect to="/farmer/dashboard" />;
+//                 return <Redirect to="/farmer/dashboard" />;
+		return <Redirect to={{
+		  pathname: '/farmer/dashboard',
+		  state: { document.readyState = "complete" }
+		}}/>
             }
             else {
                 return <Redirect to="/user/dashboard" />;
