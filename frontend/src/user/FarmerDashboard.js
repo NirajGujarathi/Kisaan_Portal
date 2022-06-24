@@ -7,7 +7,12 @@ const FarmerDashboard = () => {
         user: { _id, name, email, location, role}
     } = isAuthenticated();
 	
-	
+	useEffect(() => {
+		// call api or anything
+		console.log("loaded");
+		GetInfo();
+            	onloadData();
+	     });
 
     document.addEventListener('readystatechange', event => { 
         // When HTML/DOM elements are ready:
