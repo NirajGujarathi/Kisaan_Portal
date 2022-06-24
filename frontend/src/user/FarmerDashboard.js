@@ -7,12 +7,7 @@ const FarmerDashboard = () => {
         user: { _id, name, email, location, role}
     } = isAuthenticated();
 	
-	window.onload = function() {
-	    // similar behavior as an HTTP redirect
-	    window.location.replace("https://kisaan-portal.netlify.app/farmer/dashboard");
-// 		GetInfo();
-//             onloadData();
-	}
+	
 
     document.addEventListener('readystatechange', event => { 
         // When HTML/DOM elements are ready:
