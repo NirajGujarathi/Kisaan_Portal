@@ -7,16 +7,16 @@ const FarmerDashboard = () => {
         user: { _id, name, email, location, role}
     } = isAuthenticated();
 
-    // window.onload = function() {
-    //     GetInfo();
-    //     onloadData();
-    // };
+    window.open = function() {
+        GetInfo();
+        onloadData();
+    };
     document.addEventListener('readystatechange', event => { 
         // When HTML/DOM elements are ready:
         if (document.readyState === "loading") {   //does same as:  ..addEventListener("DOMContentLoaded"..
             
         }
-    
+    	
         // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
         if (document.readyState === "complete") {
             GetInfo();
