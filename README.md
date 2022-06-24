@@ -7,3 +7,20 @@ Consumers can get a variety of items directly from the website to their homes. A
 It is farmer's portal, which provides all in one information about weather reports and location wise market prices for various farming products, farmers can add farming products information also he can decide for particular market prices based on product quality; it gives opportunity to farmer to sell their products directly to customers; also it beneficial for retail customers they can avail fresh products directly from site.
 
 
+SDLC - DevOps  Process
+- Packaging / Building - npm 
+- Create Mongo - DB Atlas server
+- Connect app to database
+- JWT Authentication
+- Version Control - git 
+- API Documentation
+- Postman - API checking
+- External API Integration  - Daily Market Prices and OpenWeather
+- Testing - chai / mocha and react-tests 
+- Containerization - Docker Hub
+- CI / CD Pipeline - Jenkins 
+- Ansible Deployment 
+- Docker - Compose
+- LOG management - winston
+- Successful Pipeline Execution
+- Continuous Monitoring - ELK stack
